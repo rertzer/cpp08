@@ -1,0 +1,9 @@
+A gerer:
+	sequence containers:
+		array
+			fixed sized sequence
+		vector
+		deque
+			double ended queue
+		forward_list
+		list
