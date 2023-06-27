@@ -6,7 +6,7 @@
 /*   By: rertzer <rertzer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/13 09:35:36 by rertzer           #+#    #+#             */
-/*   Updated: 2023/06/13 11:55:34 by rertzer          ###   ########.fr       */
+/*   Updated: 2023/06/27 14:44:04 by rertzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,17 @@ Span::Span(Span const & s): n(s.n), vec(s.vec)
 
 Span::~Span()
 {
+}
+
+Span &	Span::operator=(Span const & rhs)
+{
+	if (n <= rhs.n)
+		throw (OutOfRangeException());
+	if (this != &rhs)
+	{
+		vec = rhs.vec;
+	}
+	return *this;
 }
 
 void	Span::addNumber(int nb)

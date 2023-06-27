@@ -6,7 +6,7 @@
 /*   By: rertzer <rertzer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/13 09:20:56 by rertzer           #+#    #+#             */
-/*   Updated: 2023/06/13 12:14:14 by rertzer          ###   ########.fr       */
+/*   Updated: 2023/06/27 14:17:42 by rertzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ class Span
 		};
 
 		unsigned int const	n;
-		std::vector<int>			vec;
+		std::vector<int>	vec;
 };
 
 # endif
