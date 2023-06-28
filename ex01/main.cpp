@@ -6,7 +6,7 @@
 /*   By: rertzer <rertzer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/13 10:42:33 by rertzer           #+#    #+#             */
-/*   Updated: 2023/06/27 14:47:16 by rertzer          ###   ########.fr       */
+/*   Updated: 2023/06/28 11:48:06 by rertzer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 
 int	main()
 {
-	std::cout << "create empty span max size 5 ; try shortestSpan\n";
+	std::cout << "create empty span max size 5\ntry shortestSpan\n";
 	Span sp = Span(5);
 	try
 	{
-		std::cout << sp.longestSpan() << std::endl;
+		std::cout << sp.shortestSpan() << std::endl;
 	}
 	catch (const std::exception & e)
 	{
